@@ -1,27 +1,25 @@
-# MyApp
+# 说明
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
+该项目用于解释目录结构内容
 
-## Development server
+# 本层目录结构
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## e2e
 
-## Code scaffolding
+### 端对端测试目录，主要是用于集成测试操作的，目前在项目中尚未开始使用
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## node_modules
 
-## Build
+### 依赖包下载目录，在代码仓库中不存放
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## src
 
-## Running unit tests
+### 主体的代码逻辑文件目录，我们主要在该目录下工作
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> ## karma.conf.js
+>
+> ### karma 是单元测试的执行器，karma.conf.js 是 karma 的配置文件
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+> ## package.json
+>
+> ### 包管理器 npm 的配置文件，类似后端 pom.xml 文件，主要列出了该应用程序所使用的第三方依赖包
