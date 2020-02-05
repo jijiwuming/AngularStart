@@ -46,7 +46,7 @@
 
 > ### package.json
 >
-> #### 包管理器 npm 的配置文件，类似后端 pom.xml 文件，主要列出了该应用程序所使用的第三方依赖包
+> #### 包管理器 npm 的配置文件，类似后端 pom.xml 文件，主要列出了该应用程序所使用的第三方依赖包，详见[package.json](https://docs.npmjs.com/files/package.json)
 
 > ### tsconfig.app.json
 >
