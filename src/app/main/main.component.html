@@ -1,2 +1,10 @@
 <h1>main 页面</h1>
 <button (click)="getweather()">请求天气数据</button>
+<div *ngIf="weather !== undefined">
+  <p>时间:{{ weather.date }} {{ weather.update_time }}</p>
+  <p>城市:{{ weather.city }}</p>
+  <p>天气:{{ weather.wea }}</p>
+  <p>湿度:{{ weather.humidity }}</p>
+  <p>空气等级:{{ weather.air_level }}</p>
+  <p>建议:{{ weather.air_tips }}</p>
+</div>

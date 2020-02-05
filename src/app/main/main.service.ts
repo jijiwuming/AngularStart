@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { DataService } from '../core/data.service';
-import { HttpParams } from '@angular/common/http';
+import { Weather } from './model/weather';
+import { map } from 'rxjs/operators';
 
 @Injectable()
 export class MainService {
@@ -15,6 +16,8 @@ export class MainService {
       appsecret: 'owcrU4ef'
     };
     const url = 'https://tianqiapi.com/api';
-    return this.dataservice.get(url, params)
+    return this.dataservice.get(url, params).pipe(
+      map(res => res as Weather)
+    )
   }
 }

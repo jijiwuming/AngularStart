@@ -1,3 +1,5 @@
+import { Alarm } from './alarm';
+
 export interface Weather {
     cityid: string;
     date: string;
