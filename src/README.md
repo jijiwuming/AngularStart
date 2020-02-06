@@ -1,6 +1,6 @@
 # src 目录
 
-### [app >](./app/README.md)
+### [app >](./app)
 
 #### 应用主体代码目录
 
