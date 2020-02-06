@@ -20,7 +20,7 @@
 
 > ### app-routing.module.ts
 >
-> #### app.module 的路由模块，在 app.module.ts 中被引入，该类也可与 module.ts 文件合并，参考[main.module.ts](./main/main.module.ts)
+> #### app.module 的路由模块，在 app.module.ts 中被引入，该类也可与 module.ts 文件合并，参考[main.module.ts](./main/main.module.ts)，应项目需要，最外层的模块中配置路由时一般采用[惰性加载](https://angular.cn/guide/router#lazy-loading-route-configuration)，避免加载不必要的资源
 
 > ### app.component.ts
 >
